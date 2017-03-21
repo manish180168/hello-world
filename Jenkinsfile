@@ -1,10 +1,9 @@
-
 pipeline {
-    agent { any 'maven:3.3.3' }
+    agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'mvn --version'
+                bat 'set'
             }
         }
     }
