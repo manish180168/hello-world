@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
+                bat '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 ''' 
@@ -16,7 +16,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                echo 'This is a minimal pipeline.'
+                echo 'This is a minimal pipeline1.'
             }
         }
     }
